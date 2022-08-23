@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>App Wave</title>
+
+    <!-- Photon.css -->
+    <!--<link rel="stylesheet" href="css/photon.min.css">-->
+    <link rel="stylesheet" href="css/photon.css">
+
+    <!-- AppWave Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/myTooltip.css">
+    <link rel="stylesheet" href="css/flatnotifiy.css">
+
+</head>
+
+<body>
+<div class="window">
+
+    <header class="toolbar toolbar-header">
+
+        <h1 class="title">
+            App Wave
+        </h1>
+
+        <div class="toolbar-actions">
+
+            <div class="btn-group">
+
+                <a href="/" class="btn btn-default">
+                    <span class="icon icon-home icon-text"></span>
+                    Главная
+                </a>
+
+                <button class="btn btn-default">
+                    <span class="icon icon-record red icon-text"></span>
+                    Фильмы
+                </button>
+
+                <button class="btn btn-default">
+                    <span class="icon icon-record orange icon-text"></span>
+                    Сериалы
+                </button>
+
+                <button class="btn btn-default active">
+                    <span class="icon icon-record green icon-text"></span>
+                    Аниме
+                </button>
+
+                <button class="btn btn-default">
+                    <span class="icon icon-record blue icon-text"></span>
+                    ТВ каналы
+                </button>
+
+                <button class="btn btn-default">
+                    <span class="icon icon-trophy color-yellow icon-text"></span>
+                    Лига чемпионов УЕФА
+                </button>
+
+            </div>
+
+            <button class="btn btn-default btn-dropright js-photon-dropdown"
+                    data-mytooltip-custom-class="photon-right"
+                    data-mytooltip-content="<span class='test'>123</span>"
+                    data-mytooltip-direction="right"
+            >
+                <span class="icon icon-home icon-text"></span>
+                Фильтры
+            </button>
+
+            <button class="btn btn-negative pull-right"> Выйти</button>
+
+            <button class="btn btn-default pull-right">
+                <span class="icon icon-user icon-text"></span>
+                ZeoNish
+            </button>
+
+            <button class="btn btn-positive pull-right"> Войти</button>
+
+
+            <button class="btn btn-default btn-dropleft pull-right js-photon-dropdown"
+                    data-mytooltip-custom-class="photon-left"
+                    data-mytooltip-content="<span class='test'>123</span>"
+                    data-mytooltip-direction="left"
+            >
+                <span class="icon icon-megaphone icon-text"></span>
+                Уведомления <span class="badger">999</span>
+            </button>
+        </div>
+
+    </header>
+
+    <div class="window-content">
+
+        <div class="pane-group">
+
+            <div class="pane pane-sm sidebar">
+
+                <!-- Главное меню -->
+                <nav class="nav-group hide">
+
+                    <h5 class="nav-group-title">Главное меню</h5>
+
+                    <span class="nav-group-item active">
+                        <span class="icon icon-home"></span>
+                        Главная
+                    </span>
+
+                </nav>
+                <!-- Главное меню -->
+
+                <!-- Избранное -->
+                <h5 class="nav-group-title">Избранное</h5>
+
+                <!-- Аниме -->
+                <nav class="nav-group anime">
+
+                    <span class="nav-group-item nav-group-item-header" data-title="Anime">
+                        <span class="icon icon-right-open"></span>
+                        <strong>Аниме</strong>
+                    </span>
+                </nav>
+                <nav class="nav-group" style="display: none;" data-title-items="Anime">
+                    <span class="nav-group-item" title="Арифурэта: Сильнейший ремесленник в мире">
+                        <span class="icon icon-video"></span>
+                        Арифурэта: Сильнейший ремесленник в мире
+                    </span>
+
+                </nav>
+                <!-- Аниме -->
+
+                <!-- ТВ -->
+                <nav class="nav-group tv">
+
+                    <span class="nav-group-item nav-group-item-header" data-title="Tv">
+                        <span class="icon icon-right-open"></span>
+                        <strong>ТВ</strong>
+                    </span>
+                </nav>
+                <nav class="nav-group" style="display: none;" data-title-items="Tv">
+                    <span class="nav-group-item" title="Пятница">
+                        <span class="icon icon-img">
+                            <img src="images/tv/friday.png" alt="">
+                        </span>
+                        Пятница
+                    </span>
+
+                </nav>
+                <!-- ТВ -->
+
+                <!-- Избранное -->
+
+                <nav class="nav-group hide">
+
+                    <h5 class="nav-group-title">Аниме</h5>
+
+                    <span class="nav-group-item">
+                        <span class="icon icon-down-open"></span>
+                        <strong>А</strong>
+                    </span>
+
+                    <span class="nav-group-item active" title="Арифурэта: Сильнейший ремесленник в мире">
+                        <!--<span class="icon icon-flow-line"></span>-->
+                        <span class="icon icon-video"></span>
+                        Арифурэта: Сильнейший ремесленник в мире
+                    </span>
+
+                    <span class="nav-group-item" title="Арифурэта: Сильнейший ремесленник в мире">
+                        <span class="icon icon-flow-line"></span>
+                        Арифурэта: Сильнейший ремесленник в мире
+                    </span>
+
+                    <span class="nav-group-item" title="Арифурэта: Сильнейший ремесленник в мире">
+                        <span class="icon icon-flow-line"></span>
+                        Арифурэта: Сильнейший ремесленник в мире
+                    </span>
+
+                </nav>
+
+                <nav class="nav-group text-center">
+
+                    <h5 class="nav-group-title">Цифры</h5>
+
+                    <div class="btn-group alfavit text-center">
+                        <button class="btn btn-default" data-title-alfavit="1">1</button>
+                        <button class="btn btn-default" data-title-alfavit="2">2</button>
+                        <button class="btn btn-default" data-title-alfavit="3">3</button>
+                        <button class="btn btn-default" data-title-alfavit="4">4</button>
+                        <button class="btn btn-default" data-title-alfavit="5">5</button>
+                        <button class="btn btn-default" data-title-alfavit="6">6</button>
+                        <button class="btn btn-default" data-title-alfavit="7">7</button>
+                        <button class="btn btn-default" data-title-alfavit="8">8</button>
+                    </div>
+
+                    <div class="btn-group alfavit text-center">
+                        <button class="btn btn-default" data-title-alfavit="9">9</button>
+                        <button class="btn btn-default" data-title-alfavit="0">0</button>
+                    </div>
+
+                    <h5 class="nav-group-title">Алфавит</h5>
+
+                    <div class="btn-group alfavit text-center">
+                        <button class="btn btn-default" data-title-alfavit="А">А</button>
+                        <button class="btn btn-default" data-title-alfavit="Б">Б</button>
+                        <button class="btn btn-default" data-title-alfavit="В">В</button>
+                        <button class="btn btn-default" data-title-alfavit="Г">Г</button>
+                        <button class="btn btn-default" data-title-alfavit="Д">Д</button>
+                        <button class="btn btn-default" data-title-alfavit="Е">Е</button>
+                        <button class="btn btn-default" data-title-alfavit="Ж">Ж</button>
+                    </div>
+
+                    <div class="btn-group alfavit text-center">
+                        <button class="btn btn-default">З</button>
+                        <button class="btn btn-default">И</button>
+                        <button class="btn btn-default">Й</button>
+                        <button class="btn btn-default">К</button>
+                        <button class="btn btn-default">Л</button>
+                        <button class="btn btn-default">М</button>
+                        <button class="btn btn-default">Н</button>
+                    </div>
+
+                    <div class="btn-group alfavit text-center">
+                        <button class="btn btn-default">О</button>
+                        <button class="btn btn-default">П</button>
+                        <button class="btn btn-default">Р</button>
+                        <button class="btn btn-default">С</button>
+                        <button class="btn btn-default">Т</button>
+                        <button class="btn btn-default">У</button>
+                        <button class="btn btn-default">Ф</button>
+                    </div>
+
+                    <div class="btn-group alfavit text-center">
+                        <button class="btn btn-default">Х</button>
+                        <button class="btn btn-default">Ц</button>
+                        <button class="btn btn-default">Ч</button>
+                        <button class="btn btn-default">Ш</button>
+                        <button class="btn btn-default">Щ</button>
+                    </div>
+
+                    <div class="btn-group alfavit text-center">
+                        <button class="btn btn-default">Э</button>
+                        <button class="btn btn-default">Ю</button>
+                        <button class="btn btn-default">Я</button>
+                    </div>
+
+                </nav>
+
+                <!-- Название раздела -->
+                <nav class="nav-group">
+                    <h5 class="nav-group-title">Название :</h5>
+                </nav>
+                <!-- Название раздела -->
+
+                <!-- Буква -->
+                <nav class="nav-group">
+
+                    <span class="nav-group-item nav-group-item-header" data-title="А">
+                        <span class="icon icon-right-open"></span>
+                        <strong>А</strong>
+                    </span>
+
+                </nav>
+                <!-- Буква -->
+
+                <!-- Сам список под букву -->
+                <nav class="nav-group" style="display: none;" data-title-items="А">
+
+                    <span class="nav-group-item active" title="Арифурэта: Сильнейший ремесленник в мире">
+                        <!--<span class="icon icon-flow-line"></span>-->
+                        <span class="icon icon-video"></span>
+                        <a href="#">Арифурэта: Сильнейший ремесленник в мире</a>
+                    </span>
+
+                    <span class="nav-group-item" title="Арифурэта: Сильнейший ремесленник в мире">
+                        <span class="icon icon-video"></span>
+                        Арифурэта: Сильнейший ремесленник в мире
+                    </span>
+
+                    <span class="nav-group-item" title="Арифурэта: Сильнейший ремесленник в мире">
+                        <span class="icon icon-video"></span>
+                        Арифурэта: Сильнейший ремесленник в мире
+                    </span>
+
+                </nav>
+                <!-- Сам список под букву -->
+
+
+                <!-- Буква -->
+                <nav class="nav-group">
+
+                    <span class="nav-group-item nav-group-item-header" data-title="Б">
+                        <span class="icon icon-right-open"></span>
+                        <strong>Б</strong>
+                    </span>
+
+                </nav>
+                <!-- Буква -->
+
+                <!-- Сам список под букву -->
+                <nav class="nav-group" style="display: none;" data-title-items="Б">
+
+                    <span class="nav-group-item active" title="Арифурэта: Сильнейший ремесленник в мире">
+                        <!--<span class="icon icon-flow-line"></span>-->
+                        <span class="icon icon-video"></span>
+                        <a href="#">Арифурэта: Сильнейший ремесленник в мире</a>
+                    </span>
+
+                    <span class="nav-group-item" title="Арифурэта: Сильнейший ремесленник в мире">
+                        <span class="icon icon-video"></span>
+                        Арифурэта: Сильнейший ремесленник в мире
+                    </span>
+
+                    <span class="nav-group-item" title="Арифурэта: Сильнейший ремесленник в мире">
+                        <span class="icon icon-video"></span>
+                        Арифурэта: Сильнейший ремесленник в мире
+                    </span>
+
+                </nav>
+                <!-- Сам список под букву -->
+
+
+                <!-- Разделы -->
+                <nav class="nav-group hide">
+
+                    <h5 class="nav-group-title">Разделы</h5>
+
+                    <span class="nav-group-item" href="#">
+                        <span class="icon icon-record red"></span>
+                        Фильмы
+                    </span>
+
+                    <span class="nav-group-item" href="#">
+                        <span class="icon icon-record orange"></span>
+                        Сериалы
+                    </span>
+
+                    <span class="nav-group-item" href="#">
+                        <span class="icon icon-record green"></span>
+                        Аниме
+                    </span>
+
+                    <span class="nav-group-item" href="#">
+                        <span class="icon icon-record blue"></span>
+                        ТВ каналы
+                    </span>
+
+                </nav>
+                <!-- Разделы -->
+
+                <!-- Еще -->
+                <nav class="nav-group hide">
+
+                    <h5 class="nav-group-title">Devices</h5>
+
+                    <span class="nav-group-item">
+                        <span class="icon icon-drive"></span>
+                        Backup disk
+                    </span>
+
+                    <span class="nav-group-item">
+                        <span class="icon icon-drive"></span>
+                        Backup disk
+                    </span>
+
+                    <span class="nav-group-item">
+                        <span class="icon icon-drive"></span>
+                        Backup disk
+                    </span>
+
+                    <span class="nav-group-item">
+                        <span class="icon icon-drive"></span>
+                        Backup disk
+                    </span>
+
+                </nav>
+                <!-- Еще -->
+
+            </div>
+
+            <div class="pane">
+
+                <div class="loader hide">
+                    <div class="loader__background">
+                        <div class="loader__inner"></div>
+                    </div>
+                </div>
+
+                <!--
+                <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+                <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+                -->
+
+                <!--
+                <video class="plyr__video-embed no-margin no-padding"
+                       id="player"
+                       poster="https://live.staticflickr.com/31337/48853485328_8e78141ace_b.jpg"
+                       preload="none"
+                       allowfullscreen
+                       allowtransparency
+                       playsinline
+                       controls
+                >
+                    <source src="https://www.flickr.com/video_download.gne?id=48853485328" type="video/mp4" />
+
+                </video>
+
+                <script>
+                    const player = new Plyr('#player', {
+                        controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen'],
+                        settings : ['captions', 'quality', 'speed', 'loop'],
+                        // autoplay: true
+                    });
+                </script>
+                -->
+
+                <!--
+                <div class="plyr__video-embed no-margin no-padding" id="player">
+                    <iframe
+                            src="https://video.sibnet.ru/shell.php?videoid=3716690"
+                            frameborder="0" allowfullscreen="1" scrolling="no"
+                    ></iframe>
+                </div>
+
+                <script>
+                    const player = new Plyr('#player');
+                </script>
+                -->
+
+                <!--
+                <iframe class="app-wave-player" src="https://video.sibnet.ru/shell.php?videoid=3716690" frameborder="0" allowfullscreen="1" scrolling="no"></iframe>
+                -->
+
+                <!--
+                <iframe class="app-wave-player" src="https://uma.media/play/embed/636ffab27c5a4a9cd5f9a40b2e70ea88?wmode=opaque&amp;fakeFullscreen=1" frameborder="0" allowfullscreen="1" scrolling="no"></iframe>
+                -->
+
+                <table class="app-content table-striped">
+
+                    <thead>
+                    <tr>
+                        <th class="w-7">Название</th>
+                        <th class="w-1">Группа</th>
+                        <th class="w-1">Дата публикации</th>
+                        <th class="w-1">Автор</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td><a href="#">Арифурэта: Сильнейший ремесленник в мире</a></td>
+                        <td>Аниме</td>
+                        <td>10 Октября 2019</td>
+                        <td>ZeoNish</td>
+                    </tr>
+                    <tr>
+                        <td>Название</td>
+                        <td>Аниме</td>
+                        <td>10 Октября 2019</td>
+                        <td>ZeoNish</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="toolbar toolbar-footer">
+
+        <div class="toolbar-actions position-relative">
+
+            <button class="btn btn-default hide"> Назад</button>
+
+            <a class="btn btn-default js-photon pull-left"
+                    data-mytooltip-content="Ссылка на группу ВК"
+                    data-mytooltip-direction="right"
+            >
+               ВК
+            </a>
+
+            <!-- Список серий -->
+            <div class="btn-group text-center">
+
+                <button class="btn btn-default" data-series="back">
+                    <span class="icon icon-left-open"></span>
+                </button>
+
+                <button class="btn btn-default" data-series="1">1</button>
+                <button class="btn btn-default" data-series="2">2</button>
+                <button class="btn btn-default" data-series="3">3</button>
+                <button class="btn btn-default" data-series="4">4</button>
+                <button class="btn btn-default" data-series="5">5</button>
+                <button class="btn btn-default" data-series="6">6</button>
+                <button class="btn btn-default" data-series="7">7</button>
+                <button class="btn btn-default" data-series="8">8</button>
+
+                <button class="btn btn-default" data-series="next">
+                    <span class="icon icon-right-open"></span>
+                </button>
+
+            </div>
+            <!-- Список серий -->
+
+            <h1 class="title position-absolute title-footer ">
+                <span class="icon icon-air"></span>
+            </h1>
+
+            <div class="btn-group pull-right">
+
+                <button class="btn btn-default js-photon"
+                        data-mytooltip-content="В избранное"
+                        data-mytooltip-direction="top"
+                >
+                    <span class="icon icon-star"></span>
+                </button>
+
+                <button class="btn btn-default js-photon"
+                        data-mytooltip-content="Мне нравится"
+                        data-mytooltip-direction="top"
+                >
+                    <span class="icon icon-heart"></span>
+                </button>
+
+                <button class="btn btn-default js-photon active"
+                        data-mytooltip-content="Отметка о просмотре"
+                        data-mytooltip-direction="top"
+                >
+                    <span class="icon icon-check"></span>
+                </button>
+
+                <button class="btn btn-default">
+                    <span class="icon icon-share"></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</div>
+
+<script type="application/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="application/javascript" src="js/myTooltip.js"></script>
+<script type="application/javascript" src="js/classie.js"></script>
+<script type="application/javascript" src="js/flatnotifiy.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

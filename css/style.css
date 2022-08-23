@@ -1,0 +1,74 @@
+@import "../css/feather.css" screen;
+
+.window {
+    overflow: hidden;
+}
+.sidebar {
+    background-color: #f5f5f4;
+}
+
+.app-wave-player {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: relative;
+}
+
+.nav-group-title {
+    font-weight: 400;
+}
+
+.toolbar-actions > .btn,
+.toolbar-actions > .btn-group {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.toolbar-actions .title {
+    top: 3px;
+    width: 100%;
+}
+
+.alfavit:first-child {
+    padding: 10px 10px 2px;
+}
+
+.alfavit {
+    padding: 2px 10px 2px;
+}
+
+.nav-group-item > .icon, .nav-group-item > strong {
+    cursor: pointer;
+}
+
+.nav-group-item > .icon-img {
+    margin-top: 0px;
+}
+.nav-group-item > .icon > img {
+    width: 19px;
+    height: 19px;
+}
+
+
+.app-content {
+    position: relative;
+    display: block;
+    z-index: 999;
+}
+
+#player {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+}
+
+#player iframe {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden!important;
+    border: none;
+}
